@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-
 const quoteApi = axios.create({
-    baseURL: import.meta.env.VITE_BASE_URL_API_NINJA,
+    baseURL: 'https://api.api-ninjas.com/v1',
 
 });
 
@@ -10,7 +9,7 @@ quoteApi.interceptors.request.use( config => {
 
     config.headers = {
         ...config.headers,
-        'X-Api-Key': import.meta.env.VITE_BASE_APIKEY_API_NINJA
+        'X-Api-Key': 'VEotY/rC6FQP/IDj+nn17Q==bJqkwxfzIJoY2mZt'
     }
     
     return config;
