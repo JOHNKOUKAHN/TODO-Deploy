@@ -26,10 +26,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      VITE_BASE_URL_API_NINJA: https://api.api-ninjas.com/v1
-      VITE_BASE_APIKEY_API_NINJA: VEotY/rC6FQP/IDj+nn17Q==bJqkwxfzIJoY2mZt
-      VITE_BASE_URL_API_SUPABASE: https://jdgnryztebhrejslxhgo.supabase.co/rest/v1
-      VITE_BASE_APIKEY_API_SUPABASE: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkZ25yeXp0ZWJocmVqc2x4aGdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYwMTkxMTksImV4cCI6MjAwMTU5NTExOX0.qTHBe5ABgc2OmZB6yKeHZRPgzdeb-6fiLTes06ZmlpQ
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
